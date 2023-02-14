@@ -65,3 +65,7 @@ form.addEventListener('submit', (event) => {
   displayBooks();
   clearForm();
 });
+
+window.addEventListener('load', () => {
+  displayBooks();
+})
