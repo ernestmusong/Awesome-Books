@@ -1,19 +1,19 @@
-const booksDom = document.querySelector('.books-wrap')
+/* eslint no-unused-vars: 0 */
+const booksDom = document.querySelector('.books-wrap');
 const form = document.querySelector('.book-form');
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
-const addBtn = document.querySelector('#add-btn')
 // LOCAL STORAGE
 let booksArr = [];
 const book = {};
-function displayBooks () {
+function displayBooks() {
   const books = JSON.parse(localStorage.getItem('books'));
   if (books) {
     booksArr = books;
   }
-let result = ''
-books.map(item => {
-    result+= `
+  let result = '';
+  books.map((item) => {
+    result += `
     <article class="book">
     <h4 class="book-title">${item.title}</h4>
     <h4 class="book-author">${item.author}</h4>
@@ -22,9 +22,9 @@ books.map(item => {
  </article>
     `;
     return result;
-})
-booksDom.innerHTML = result;
-return result;
+  });
+  booksDom.innerHTML = result;
+  return result;
 }
 const addBook = () => {
   if (title.value.length !== 0 && author.value.length !== 0) {
@@ -40,13 +40,13 @@ const clearForm = () => {
     title.value = '';
     author.value = '';
   }
-}
-function removeBook (id) {
-  let filteredBooks = booksArr.filter(item => item.id != id);
+};
+function removeBook(id) {
+  const filteredBooks = booksArr.filter((item) => item.id.toString() !== id.toString());
   booksArr = filteredBooks;
-  let result = ''
-booksArr.map(item => {
-    result+= `
+  let result = '';
+  booksArr.map((item) => {
+    result += `
     <article class="book">
     <h4 class="book-title">${item.title}</h4>
     <h4 class="book-author">${item.author}</h4>
@@ -55,13 +55,13 @@ booksArr.map(item => {
  </article>
     `;
     return result;
-})
-booksDom.innerHTML = result;
-return result;
-  }
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    addBook();
-    displayBooks();
-    clearForm()
   });
+  booksDom.innerHTML = result;
+  return result;
+}
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  addBook();
+  displayBooks();
+  clearForm();
+});
