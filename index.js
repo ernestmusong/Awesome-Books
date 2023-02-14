@@ -68,4 +68,4 @@ form.addEventListener('submit', (event) => {
 
 window.addEventListener('load', () => {
   displayBooks();
-})
+});
