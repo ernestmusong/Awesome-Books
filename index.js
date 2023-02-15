@@ -6,43 +6,46 @@ const author = document.querySelector('#author');
 // LOCAL STORAGE
 let booksArr = [];
 const book = {};
-
+if (booksArr.length === 0) {
+  booksDom.style.visibility = 'hiden';
+}
 class Book {
     static removeBook = (id) => {
-    const filteredBooks = booksArr.filter((item) => item.id.toString() !== id.toString());
-    booksArr = filteredBooks
-    let result = '';
-    booksArr.map((item) => {
-      result += `
+      const filteredBooks = booksArr.filter((item) => item.id.toString() !== id.toString());
+      booksArr = filteredBooks;
+      let result = '';
+      booksArr.map((item) => {
+        result += `
       <article class="book">
             <h4 class="book-title">"${item.title}" <span class="lowercase">by</span> ${item.author}</h4>
             <button id=${item.id}  onClick = Book.removeBook(this.id) class="remove">remove</button>
       </article>
       `;
+        return result;
+      });
+      booksDom.innerHTML = result;
       return result;
-    });
-    booksDom.innerHTML = result;
-    return result;
-  }
+    }
 
 static displayBooks = (books) => {
-     books = JSON.parse(localStorage.getItem('books'));
-    if (books) {
-      booksArr = books;
-    }
-    let result = '';
-    booksArr.map((item) => {
-      result += `
+  books = JSON.parse(localStorage.getItem('books'));
+  if (books) {
+    booksArr = books;
+  }
+  let result = '';
+  booksArr.map((item) => {
+    result += `
       <article class="book">
           <h4 class="book-title">"${item.title}" <span class="lowercase">by</span> ${item.author}</h4>
           <button id=${item.id}  onClick = Book.removeBook(this.id) class="remove">remove</button>
      </article>
       `;
-      return result;
-    });
-    booksDom.innerHTML = result;
     return result;
-  }
+  });
+  booksDom.innerHTML = result;
+  return result;
+}
+
   static addBook = () => {
     if (title.value.length !== 0 && author.value.length !== 0) {
       book.title = title.value;
@@ -52,6 +55,7 @@ static displayBooks = (books) => {
       localStorage.setItem('books', JSON.stringify(booksArr));
     }
   };
+
   static clearForm = () => {
     if (title.value.length !== 0 && author.value.length !== 0) {
       title.value = '';

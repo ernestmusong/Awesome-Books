@@ -5,14 +5,17 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 .main-title {
   text-align: center;
 }
+
 .books-wrap {
   display: flex;
   flex-direction: column;
   border: 2px solid #000;
 }
+
 article {
   display: flex;
   justify-content: space-between;
@@ -23,20 +26,25 @@ article {
   padding-right: 0.5rem;
   width: 100%;
 }
+
 article:nth-child(odd) {
   background: #ddd;
 }
+
 .book-title {
   text-transform: capitalize;
 }
+
 .lowercase {
   text-transform: lowercase;
 }
+
 .remove {
   background: white;
   border-radius: 2px;
   padding: 0.125rem 0.2rem;
 }
+
 .underline {
   border: 2px solid black;
   width: 50px;
@@ -44,24 +52,30 @@ article:nth-child(odd) {
   margin-top: 1rem;
   margin-bottom: 1.2rem;
 }
+
 .book-form {
   text-align: center;
 }
+
 .book-form ul {
   display: block;
   width: 70%;
   margin: 0 auto;
   list-style-type: none;
 }
+
 .book-form ul li {
   margin-top: 0.5rem;
   width: 100%;
 }
+
 .book-form input {
- border: 2px solid black;
- width: 100%;
+  border: 2px solid black;
+  width: 100%;
 }
+
 .add-button {
   float: right;
   border: 2px solid black;
+  padding: 0.125rem;
 }
