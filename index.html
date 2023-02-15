@@ -10,9 +10,11 @@
 <body>
     <main class="main">
         <h1 class="main-title">Awesome Books</h1>
-        <div class="books-wrap"></div>
+        <section class="books-wrap"></section>
+        <div class="underline"></div>
          <!-- End form -->
-         <div class="form-wrapper">
+         <section class="form-wrapper">
+            <h1 class="main-title">Add a new book</h1>
             <form class="book-form">
                 <ul>
                     <li>
@@ -25,9 +27,11 @@
                             <input type="text" id="author" name="author" maxlength="30" placeholder="author" required>
                         </label>
                     </li>
-                    <button id="add-btn" type="submit" class="section-button">add</button>
+                    <li>
+                        <button id="add-btn" type="submit" class="add-button">Add</button>
+                    </li>
             </form>
-        </div>
+         </section>
         <!-- End form -->
     </main>
     <script src="index.js"></script>
