@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
   <h3><b>Awesome Books</b></h3>
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -36,14 +37,6 @@ data is stored in local storage. This data is retrieved from local storage anyti
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-</details>
-
-<details>
-<summary>Database</summary>
-</details>
-
 ### Key Features <a name="key-features"></a>
 - **[Add book]**
 - **[Remove book]**
@@ -69,12 +62,6 @@ sh
   cd my-folder
  git clone https://github.com/ernestmusong/Awesome-Books.git
 
-### Install
-### Usage
-
-### Run tests
-
-### Deployment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +78,7 @@ sh
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add Book update functionality]**
+- [ ] **[I intend to add "Book update" functionality]**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,12 +92,18 @@ Feel free to check the [issues page](https://github.com/ernestmusong/Awesome-Boo
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
+If you like this project, give it a star please!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+ <ul>
+    <li><a href="https://www.microverse.org/">Microverse</a></li>
+    <li><a href="https://github.com/Kaghenimbale">Kagheni mbale Christian</a></li>
+    <li><a href="https://github.com/HAMMAS-SALEEM">HAMMAS BIN SALEEM</a></li>
+    <li><a href="https://github.com/rloterh">Robert Loterh</a></li>
+  </ul>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
