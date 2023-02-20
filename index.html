@@ -1,4 +1,4 @@
- !DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,28 +8,6 @@
     <title>Awesome books</title>
 </head>
 <body>
-    <main class="main">
-        <section class="books-wrap"></section>
-        <h1 class="main-title">Awesome Books</h1>
-        <div class="underline"></div>
-        <!-- Form -->
-         <section class="form-wrapper">
-            <h1 class="main-title">Add a new book</h1>
-            <form class="book-form">
-                <ul>
-                    <li>
-                        <label for="title">
-                            <input type="text" id="title" name="title" maxlength="30" placeholder="title" required>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="author">
-                            <input type="text" id="author" name="author" maxlength="30" placeholder="author" required>
-                        </label>
-                    </li>
-                    <li>
-                        <button id="add-btn" type="submit" class="add-button">Add</button>
-                    </li>
     <nav class="nav-bar">
         <div class="logo"><a href="#">Awesome Books</a></div>
         <ul class="nav-lists">
@@ -63,8 +41,21 @@
                     <button type="submit" id="add-btn">Add</button>
                 </div>
             </form>
-         </section>
-        <!-- End form -->
+        </section>
+
+        <section class="contact-info display" id="contact-section">
+            <h2>Contact Information</h2>
+
+            <div class="infos">
+                <p>Do you have any question or just want to say "Hello"?</p>
+                <p>You can reach out to us!</p>
+                <ul>
+                    <li>- Our e-mail mail@mail.com</li>
+                    <li>- Our phone Number: +25778123456</li>
+                    <li>- Our Address: StreetName 22, 84569 City, Country.</li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -73,6 +64,5 @@
     </footer>
 
     <script src="index.js"></script>
-     
 </body>
 </html>

@@ -1,13 +1,20 @@
 /* eslint no-unused-vars: 0 */
-const booksDom = document.querySelector('.books-wrap');
-const form = document.querySelector('.book-form');
-const title = document.querySelector('#title');
+const newBookSection = document.querySelector('.new-book-section');
+const contactSection = document.getElementById('contact-section');
+const booksSection = document.getElementById('books-section');
+const list = document.getElementById('list');
+const addNew = document.getElementById('add-new');
+const newContact = document.getElementById('contact');
+const booksDom = document.querySelector('#container');
+const bookStore = document.querySelector('.book-store')
+const form = document.querySelector('#form');
+const title = document.querySelector('#book');
 const author = document.querySelector('#author');
-// LOCAL STORAGE
+
 let booksArr = [];
 const book = {};
 if (booksArr.length === 0) {
-  booksDom.style.visibility = 'hiden';
+  bookStore.style.visibility = 'hiden';
 }
 class Book {
     static removeBook = (id) => {
@@ -16,10 +23,14 @@ class Book {
       let result = '';
       booksArr.map((item) => {
         result += `
-      <article class="book">
-            <h4 class="book-title">"${item.title}" <span class="lowercase">by</span> ${item.author}</h4>
-            <button id=${item.id}  onClick = Book.removeBook(this.id) class="remove">remove</button>
-      </article>
+      <li class="container-list">
+      <div class="description">
+      <h2>${item.title}</h2>
+      by
+      <h3>${item.author}</h3>
+      </div>
+      <button id=${item.id} onClick = Book.removeBook(this.id) class='remove'>Remove</button>
+      </li>
       `;
         return result;
       });
@@ -35,10 +46,14 @@ static displayBooks = (books) => {
   let result = '';
   booksArr.map((item) => {
     result += `
-      <article class="book">
-          <h4 class="book-title">"${item.title}" <span class="lowercase">by</span> ${item.author}</h4>
-          <button id=${item.id}  onClick = Book.removeBook(this.id) class="remove">remove</button>
-     </article>
+    <li class="container-list">
+    <div class="description">
+    <h2>${item.title}</h2>
+    by
+    <h3>${item.author}</h3>
+    </div>
+    <button id=${item.id} onClick = Book.removeBook(this.id) class='remove'>Remove</button>
+    </li>
       `;
     return result;
   });
@@ -74,3 +89,29 @@ form.addEventListener('submit', (event) => {
 window.addEventListener('load', () => {
   Book.displayBooks(booksArr);
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  contactSection.classList.add('display');
+  newBookSection.classList.add('display');
+  booksSection.classList.remove('display')
+});
+
+list.addEventListener('click', () => {
+  booksSection.classList.remove('display')
+  contactSection.classList.add('display')
+  newBookSection.classList.add('display')
+});
+
+addNew.addEventListener('click', () => {
+  newBookSection.classList.remove('display')
+  booksSection.classList.add('display')
+  contactSection.classList.add('display')
+});
+
+newContact.addEventListener('click', () => {
+  contactSection.classList.remove('display')
+  newBookSection.classList.add('display')
+  booksSection.classList.add('display')
+});
+
+
