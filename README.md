@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
-  <h3><b>Awesome Bookd</b></h3>
+  <h3><b>Awesome Books</b></h3>
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -19,7 +20,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 # 📖 [Awesome Books] <a name="about-project"></a>
@@ -37,24 +37,9 @@ data is stored in local storage. This data is retrieved from local storage anyti
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="#"></a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="#"></a></li>
-  </ul>
-</details>
-
 ### Key Features <a name="key-features"></a>
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Add book]**
+- **[Remove book]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,8 +48,6 @@ data is stored in local storage. This data is retrieved from local storage anyti
 - [Live Demo Link](https://ernestmusong.github.io/Awesome-Books/)
 
 ## 🚀 Project Presentation <a name="live-demo"></a>
-
-- [Presentation Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,19 +60,8 @@ data is stored in local storage. This data is retrieved from local storage anyti
 Clone this repository to your desired folder:
 sh
   cd my-folder
- git clone https://github.com/ernestmusong/ernestmusong.github.io.git
+ git clone https://github.com/ernestmusong/Awesome-Books.git
 
-### Install
-
-Install this project with:
-sh
-  cd ernestmusong.github.io
-  npm install
-### Usage
-
-### Run tests
-
-### Deployment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,10 +78,8 @@ sh
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
+- [ ] **[I intend to add "Book update" functionality]**
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -117,33 +87,27 @@ sh
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/ernestmusong/Awesome-Books/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
+If you like this project, give it a star please!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+ <ul>
+    <li><a href="https://www.microverse.org/">Microverse</a></li>
+    <li><a href="https://github.com/Kaghenimbale">Kagheni mbale Christian</a></li>
+    <li><a href="https://github.com/HAMMAS-SALEEM">HAMMAS BIN SALEEM</a></li>
+    <li><a href="https://github.com/rloterh">Robert Loterh</a></li>
+  </ul>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
- This Project is MIT licensed
+ This project is [MIT](./LICENSE.txt) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
